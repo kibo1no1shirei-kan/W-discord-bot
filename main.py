@@ -21,5 +21,5 @@ async def on_ready():
 
 @bot.command()
 async def arknights(ctx,arknights):
-    
+    pass
     
