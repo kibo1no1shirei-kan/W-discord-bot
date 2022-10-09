@@ -23,9 +23,19 @@ async def on_ready():
 
 # this is the commnand to search for related things in arknighs
 
+@bot.event
+async def on_command_error(ctx,error):
+    await ctx.send(error)
+
+
+
+
+
 @bot.command()
-async def arknights(ctx,arknights):
-    arknights = "null"
+async def arknights(ctx,operator):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(f'https://gamepress.gg/arknights/operator/{operator}') as bigchungus:
+            await ctx.send(bigchungus.status)    
     return
     
 bot.run("MTAxODAzNjA3MzI1Njk5Njg3Ng.G8Kf5k.irE21heU8pEnoCvCmArqwvounQoDZdjfTpVFfM")
