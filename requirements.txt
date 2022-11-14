@@ -1,0 +1,6 @@
+nextcord 
+re
+webdrivers
+selenium
+chrome
+BeautifulSoup
