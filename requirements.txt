@@ -4,3 +4,4 @@ webdrivers
 selenium
 chrome
 BeautifulSoup
+motor #for mongodb drivers async
